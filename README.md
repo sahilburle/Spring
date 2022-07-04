@@ -21,3 +21,8 @@ It is a specialized version of @Component annotation.
 @RestController annotation in order to simplify the creation of RESTful web services.
 It's a convenient annotation that combines @Controller and @ResponseBody, which eliminates the need to annotate every request handling method of the controller class with the @ResponseBody annotation.
 
+**What is @RequestMapping Spring?**
+
+@RequestMapping is one of the most common annotation used in Spring Web applications.
+This annotation maps HTTP requests to handler methods of MVC and REST controllers.
+
