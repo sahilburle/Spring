@@ -18,12 +18,12 @@ public class topiccontroller {
 	
 	@RequestMapping("/topics")
 	public List<Topic> getAllTopics() {
-		return topicService.getAllTopics();
-//				Arrays.asList(
-//				new Topic("spring", "Spring Framework", "Spring Framework Description"),
-//				new Topic("Java", "Java Framework", "Java Framework Description"),
-//				new Topic("JS", "JS Framework", "JS Framework Description")				
-//				);
+		//return topicService.getAllTopics();
+				return Arrays.asList(
+				new Topic("spring", "Spring Framework", "Spring Framework Description"),
+				new Topic("Java", "Java Framework", "Java Framework Description"),
+				new Topic("JS", "JS Framework", "JS Framework Description")				
+				);
 	}
 	
 //	public Topic getTopic(String id) {
