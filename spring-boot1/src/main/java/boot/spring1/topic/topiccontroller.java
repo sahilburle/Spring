@@ -36,7 +36,7 @@ public class topiccontroller {
 		return topicService.getTopic(id); 
 	}
 	
-	@PostMapping("/topics")
+	@PostMapping("/topics/post")
 	public void addTopic(@RequestBody Topic topic) {
 		topicService.addTopic(topic);
 		
