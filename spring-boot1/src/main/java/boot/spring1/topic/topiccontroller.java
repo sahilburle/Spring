@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.annotation.Description;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,5 +34,11 @@ public class topiccontroller {
 	@RequestMapping("/topics/{id}")
 	public Topic getTopic(@PathVariable String id) {
 		return topicService.getTopic(id); 
+	}
+	
+	@PostMapping("/topics")
+	public void addTopic(@RequestBody Topic topic) {
+		topicService.addTopic(topic);
+		
 	}
 }
