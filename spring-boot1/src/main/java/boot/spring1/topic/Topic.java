@@ -35,6 +35,11 @@ public class Topic {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+
+//	public Object getId() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+//	
 	
 }
