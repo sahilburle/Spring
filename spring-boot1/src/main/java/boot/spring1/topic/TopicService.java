@@ -28,13 +28,13 @@ public class TopicService {
 		topics.add(topic);	
 	}
 	
-	public Topic updateTopic(String id, Topic topic) {
+	public void updateTopic(String id, Topic topic) {
 		for (int i = 0; i < topics.size(); i++) {
 			Topic t = topics.get(i);
 			
 			if (t.getIdString().equals(id)) {
 				topics.set(i, topic);
-				return topicService.updateTopic(id, topic);
+				return;
 			}
 		}
 	}	

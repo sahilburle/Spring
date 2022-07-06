@@ -43,8 +43,8 @@ public class topiccontroller {
 	}
 	
 	@PutMapping("/topics/put/{id}")
-	public Topic updateTopic(@RequestBody Topic topic, @PathVariable String id) {
-		return topicService.updateTopic(id, topic);
+	public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
+		topicService.updateTopic(id, topic);
 	}
 	
 }
