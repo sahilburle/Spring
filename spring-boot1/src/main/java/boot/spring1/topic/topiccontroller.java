@@ -1,9 +1,6 @@
 package boot.spring1.topic;
 
-import java.util.Arrays;
 import java.util.List;
-
-import javax.validation.Path.ReturnValueNode;
 
 import org.apache.catalina.core.FrameworkListener;
 import org.springframework.beans.factory.annotation.Autowired;
