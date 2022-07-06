@@ -38,7 +38,6 @@ public class topiccontroller {
 	
 	@PostMapping("/topics/post")
 	public void addTopic(@RequestBody Topic topic) {
-		topicService.addTopic(topic);
-		
+		topicService.addTopic(topic);		
 	}
 }
